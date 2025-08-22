@@ -1,0 +1,150 @@
+/* form-modern.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h2 {
+    font-size: 28px;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #718096;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f7fafc;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 220px;
+}
+
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #2b6cb0;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #2c5282;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #2b6cb0;
+    color: #2b6cb0;
+}
+
+.btn-outline:hover {
+    background: #ebf8ff;
+    transform: translateY(-1px);
+}
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #e6fffa;
+    color: #2c7a7b;
+    border: 1px solid #b2f5ea;
+}
+
+.alert-error {
+    background-color: #fff5f5;
+    color: #c53030;
+    border: 1px solid #feb2b2;
+}
+
+.alert::before {
+    content: "✔️";
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.alert-error::before {
+    content: "❌";
+}
